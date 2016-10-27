@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+}
+
+dependencies {
+    compile "com.android.support:support-v4:$rootProject.ext.androidSupportLibraryVersion"
+    compile "com.android.support:design:$rootProject.ext.androidSupportLibraryVersion"
+}
